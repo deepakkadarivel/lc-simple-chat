@@ -1,16 +1,20 @@
 {
+  "type": "module",
   "name": "lc-simple-chat",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "start": "ts-node src/index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "tsc && node dist/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@langchain/core": "^0.3.30",
+    "@langchain/ollama": "^0.1.4",
     "@types/node": "^22.10.6",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
